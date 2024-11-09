@@ -1,4 +1,5 @@
 {
+  // function to count number of time repeat same word in a sentence
   const countWordOccurrences = (sectence: string, word: string): number => {
     const splitSectence = sectence.split(" ");
     const countTheWord = splitSectence.filter(

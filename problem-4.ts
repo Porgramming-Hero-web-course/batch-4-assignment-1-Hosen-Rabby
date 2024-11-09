@@ -1,9 +1,11 @@
 {
+  // Circle define
   type Circle = {
     shape: "circle";
     radius: number;
   };
 
+  // Rectangle define
   type Rectangle = {
     shape: "rectangle";
     width: number;
@@ -12,6 +14,7 @@
 
   type Kind = Circle | Rectangle;
 
+  // function to calculate  area of circle/rectangle
   const calculateShapeArea = (kind: Kind) => {
     let result: number;
     if (kind.shape === "circle") {

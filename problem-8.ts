@@ -1,20 +1,18 @@
 {
-  class Car {
-    make: string;
-    model: string;
-    year: number;
-    constructor(make: string, model: string, year: number) {
-      this.make = make;
-      this.model = model;
-      this.year = year;
-    }
-    getCarAge() {
-      let currentYear: number = 2024;
-      const carAge = currentYear - this.year;
-      return carAge;
-    }
-  }
+  // validTion of values
+  const validateKeys = <T extends object>(
+    obj: T,
+    keys: (keyof T)[]
+  ): boolean => {
+    return keys.every((key) => key in obj);
+  };
 
-  const car = new Car("Toyota", "Premio", 1997);
-  console.log(car.getCarAge());
+  type Person = {
+    name: string;
+    age: number;
+    email: string;
+  };
+
+  const person: Person = { name: "Alice", age: 25, email: "alice@example.com" };
+  console.log(validateKeys(person, ["email", "age"]));
 }

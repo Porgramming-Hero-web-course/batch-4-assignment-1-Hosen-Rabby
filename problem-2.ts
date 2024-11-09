@@ -1,4 +1,5 @@
 {
+  // function to remove duplicate number of an array
   function removeDuplicates(arr: number[]): number[] {
     let i = 0;
     while (i < arr.length) {

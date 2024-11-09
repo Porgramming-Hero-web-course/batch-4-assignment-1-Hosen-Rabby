@@ -8,6 +8,8 @@
       this.model = model;
       this.year = year;
     }
+
+    // find age
     getCarAge() {
       let currentYear: number = 2024;
       const carAge = currentYear - this.year;

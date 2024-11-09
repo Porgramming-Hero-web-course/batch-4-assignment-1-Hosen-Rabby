@@ -1,4 +1,6 @@
 {
+
+  // function to sum the elements of an array
   const sumArray = (n1: number[]): Number => {
     let p: number = 0;
     for (const n of n1) {
