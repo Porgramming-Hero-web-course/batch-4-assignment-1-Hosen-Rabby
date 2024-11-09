@@ -7,7 +7,7 @@
 
   const myProfile: Profile = {
     name: "Alice",
-    age: 25,
+    age: 26,
     email: "alice@example.com",
   };
 
